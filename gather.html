@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gather | Catholic Community</title>
+    <style>
+        /* 
+         * Internal CSS to ensure zero external calls.
+         * Uses system fonts for clean rendering across all devices.
+         */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #c0392b;
+            --bg-color: #f4f6f7;
+            --text-color: #333333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #1a252f;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background: var(--white);
+            padding: 2rem 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .details-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .details-list li:last-child {
+            border-bottom: none;
+        }
+
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--primary-color);
+            color: var(--white);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Gather</h1>
+        <p>A Catholic Community of Faith, Fellowship, and Service</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#meetings">Meeting Details</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <main>
+        <!-- About Us Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to <strong>Gather</strong>, A new community for adults in their 30s and 40s across the Diocese of Cleveland.</p>
+        </section>
+
+        <!-- Meeting Details Section -->
+        <section id="meetings">
+            <h2>Meeting Details</h2>
+            <p>Join us for our kickoff event to meet local peers, learn about this new ministry, and help shape the direction of future events! Feel free to drop in or stay the whole time.</p>
+            <ul class="details-list">
+                <li><strong>When:</strong> Friday, October 16 | 6:30 PM – 8:30 PM</li>
+                <li><strong>Where:</strong> St. Charles Borromeo (Lower Hall) — Parma, OH</li>
+			 <li><strong>Details: Light refreshments provided. Drop-ins welcome!</li>
+                <li><strong>Schedule:</strong>
+                    <ul>
+					<li>&bull; 6:30 PM – Doors Open & Welcome</li>
+					<li>&bull; 7:00 PM – Highlights from the 30s & 40s Survey</li>
+					<li>&bull; 7:30 PM – Group Feedback & Future Event Brainstorming</li>
+					<li>&bull; 8:00 PM – Open Socializing & Connections</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, or want to learn more about Gather, please reach out to our leadership team:</p>
+            <ul class="details-list">
+                <li><strong>Email:</strong> <a href="mailto:ne.ohio.catholic.young.adult@gmail.com">ne.ohio.catholic.young.adult@gmail.com</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gather Catholic Community. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
